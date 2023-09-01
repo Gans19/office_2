@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 40px;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+  }
+   
+label {
+    display: inline-block;
+    width: 250px;
+    text-align: left;
+    color: #374259;
+  font-weight: bold;
+  }
+span {
+    display: block;
+    overflow: hidden;
+    padding: 5px 4px 5px 6px;
+}
+  
+input {
+    width: 100%;
+}
+
+select{
+    width: 100%;
+}
+
+td button {
+    outline: none;
+    border: none;
+    font-size: 16px;
+    width: 150px;
+    height: 35px;
+    border-radius: 8px !important;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #2979FF;
+    color: #fff;
+
+
+  }
+span button  {
+    outline: none;
+    border: 1px solid 
+    #e4e7ea;
+    font-size: 16px;
+    width: 250px;
+    height: 35px;
+    border-radius: 8px !important;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: transparent;
+    color: black;
+    margin: auto;
+    padding: 0px 4px 0px 0px;
+   z-index: 2;
+   pointer-events: auto;
+  }
+
+.calender {
+
+  margin-left: 85px;
+  margin-top: 3px;
+  cursor: pointer;
+  position: absolute;
+  width:25px;
+  height: 18px;
+  color: #2979FF;
+  /* border: 3px solid #73AD21; */
+  /* background-color: #2979FF; */
+  z-index: 0;
+  pointer-events: none;
+}
+
+.calender-body{
+  /* width: 450px; */
+  background-color: transparent !important;
+  /* background: #000; */
+  margin-top: -30px;
+  height: 25px;
+  cursor: pointer;
+  z-index: -1;
+  pointer-events: none;
+
+}
+
+
+  span button p  {
+    text-align: center;
+    color: black;
+    margin-top: 5px;
+    text-decoration: none;
+    margin-left: -140px;
+  }
+
+
+  .table{
+    position: relative;
+    margin-top: 20px;
+  }
+
+  .card{
+    padding: 20px;
+  }
+
+  input[type="date"]{
+    /* background-color: #FFFFF0; */
+    
+
+  }
+  ::-webkit-calendar-picker-indicator{
+    /* background-color: grey; */
+    /* color: red; */
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+     filter: invert(53%) sepia(94%) saturate(2017%) hue-rotate(325deg) brightness(100%) contrast(93%);
+}
+/* ::-webkit-calender-calendar{
+    display: none;
+} */
+/* showIcon { 
+    background-color: #374259;
+    float: right;
+}
+.datepicker-icon {  float: right;} */
+
+/* .datepicker {
+  position: absolute;
+  z-index: 1;
+} */
+.textInput {
+  /* color: lightgray; */
+  cursor: pointer;
+}
+.date {
+  position: absolute;
+  top: 230px;
+  left: 480px;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 1200px) {
+  .date {
+    position: absolute;
+    top: 130px;
+    left: 300px;
+    z-index: 2;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .date {
+    position: absolute;
+    top: 130px;
+    left: 300px;
+    z-index: 2;
+  }
+}
+
+.rdrDefinedRangesWrapper {
+  display: none;
+}
+.button-input{
+    width: 350px !important;
+    background-color: aqua;
+}
+.editing{
+  outline: none;
+  border: 1px solid #2979FF;
+  font-size: 16px;
+  width: 250px;
+  height: 35px;
+  border-radius: 8px !important;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #2979FF;
+  color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
